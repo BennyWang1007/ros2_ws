@@ -1,0 +1,161 @@
+[0.036s] Invoking command in '/home/benny/ros2_ws/build/system_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/benny/ros2_ws/install/test_node:/home/benny/ros2_ws/install/template:/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/benny/ros2_ws/build/system_interfaces -- -j8 -l8
+[0.226s] [  2%] Built target system_interfaces__cpp
+[0.232s] [ 12%] Built target system_interfaces__rosidl_generator_c
+[0.242s] [ 12%] Built target ament_cmake_python_copy_system_interfaces
+[0.265s] [ 23%] Built target system_interfaces__rosidl_typesupport_c
+[0.266s] [ 33%] Built target system_interfaces__rosidl_typesupport_introspection_c
+[0.273s] [ 43%] Built target system_interfaces__rosidl_typesupport_cpp
+[0.275s] [ 53%] Built target system_interfaces__rosidl_typesupport_introspection_cpp
+[0.280s] [ 64%] Built target system_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.282s] [ 74%] Built target system_interfaces__rosidl_typesupport_fastrtps_c
+[0.309s] [ 74%] Built target system_interfaces
+[0.336s] [ 76%] Built target system_interfaces__py
+[0.385s] [ 84%] Built target system_interfaces__rosidl_generator_py
+[0.421s] [ 89%] Built target system_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.426s] [ 94%] Built target system_interfaces__rosidl_typesupport_c__pyext
+[0.435s] [100%] Built target system_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.604s] running egg_info
+[0.608s] writing system_interfaces.egg-info/PKG-INFO
+[0.608s] writing dependency_links to system_interfaces.egg-info/dependency_links.txt
+[0.608s] writing top-level names to system_interfaces.egg-info/top_level.txt
+[0.617s] reading manifest file 'system_interfaces.egg-info/SOURCES.txt'
+[0.617s] writing manifest file 'system_interfaces.egg-info/SOURCES.txt'
+[0.645s] [100%] Built target ament_cmake_python_build_system_interfaces_egg
+[0.665s] Invoked command in '/home/benny/ros2_ws/build/system_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/benny/ros2_ws/install/test_node:/home/benny/ros2_ws/install/template:/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/benny/ros2_ws/build/system_interfaces -- -j8 -l8
+[0.779s] Invoking command in '/home/benny/ros2_ws/build/system_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/benny/ros2_ws/install/test_node:/home/benny/ros2_ws/install/template:/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/benny/ros2_ws/build/system_interfaces
+[0.789s] -- Install configuration: ""
+[0.789s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/ament_index/resource_index/rosidl_interfaces/system_interfaces
+[0.789s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__functions.c
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__functions.h
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__functions.h
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__struct.h
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__functions.c
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__type_support.h
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__type_support.h
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__struct.h
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/check_node.h
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.790s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/node_change.h
+[0.791s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/library_path.sh
+[0.791s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/library_path.dsv
+[0.791s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_generator_c.so
+[0.791s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces
+[0.792s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg
+[0.792s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.792s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail
+[0.792s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__rosidl_typesupport_fastrtps_c.h
+[0.792s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__rosidl_typesupport_fastrtps_c.h
+[0.793s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.793s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces
+[0.794s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg
+[0.794s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail
+[0.794s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__type_support.c
+[0.794s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__rosidl_typesupport_introspection_c.h
+[0.794s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__type_support.c
+[0.795s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__rosidl_typesupport_introspection_c.h
+[0.795s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.796s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_introspection_c.so
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_c.so
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__traits.hpp
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__struct.hpp
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__traits.hpp
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__builder.hpp
+[0.798s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__builder.hpp
+[0.799s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__struct.hpp
+[0.799s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/node_change.hpp
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/check_node.hpp
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__rosidl_typesupport_fastrtps_cpp.hpp
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/dds_fastrtps
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__rosidl_typesupport_fastrtps_cpp.hpp
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail
+[0.800s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__rosidl_typesupport_introspection_cpp.hpp
+[0.801s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__rosidl_typesupport_introspection_cpp.hpp
+[0.801s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__type_support.cpp
+[0.801s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__type_support.cpp
+[0.803s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.804s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_cpp.so
+[0.804s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/pythonpath.sh
+[0.804s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/pythonpath.dsv
+[0.805s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info
+[0.805s] -- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.805s] -- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.805s] -- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.805s] -- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_node_change.py
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_check_node.py
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/__init__.py
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_check_node_s.c
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_node_change_s.c
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.806s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_c.c
+[0.807s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.807s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/__init__.py
+[0.807s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/libsystem_interfaces__rosidl_generator_py.so
+[0.807s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.859s] Listing '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces'...
+[0.860s] Listing '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg'...
+[0.864s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.865s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.866s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.867s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_generator_py.so
+[0.867s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/msg/NodeChange.idl
+[0.867s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/msg/CheckNode.idl
+[0.867s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/msg/NodeChange.msg
+[0.868s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/msg/CheckNode.msg
+[0.868s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/ament_index/resource_index/package_run_dependencies/system_interfaces
+[0.868s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/ament_index/resource_index/parent_prefix_path/system_interfaces
+[0.868s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/ament_prefix_path.sh
+[0.868s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/ament_prefix_path.dsv
+[0.869s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/path.sh
+[0.869s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/path.dsv
+[0.869s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/local_setup.bash
+[0.869s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/local_setup.sh
+[0.869s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/local_setup.zsh
+[0.870s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/local_setup.dsv
+[0.870s] -- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/package.dsv
+[0.870s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/ament_index/resource_index/packages/system_interfaces
+[0.870s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_cExport.cmake
+[0.870s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.871s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.871s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.872s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.872s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.873s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_cExport.cmake
+[0.873s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.874s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_cppExport.cmake
+[0.876s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.877s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.879s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.879s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.879s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_cppExport.cmake
+[0.879s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.881s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_pyExport.cmake
+[0.881s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.881s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.881s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.881s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.882s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.882s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.882s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.882s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.882s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfacesConfig.cmake
+[0.882s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfacesConfig-version.cmake
+[0.882s] -- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/package.xml
+[0.892s] Invoked command in '/home/benny/ros2_ws/build/system_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/benny/ros2_ws/install/test_node:/home/benny/ros2_ws/install/template:/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/benny/ros2_ws/build/system_interfaces

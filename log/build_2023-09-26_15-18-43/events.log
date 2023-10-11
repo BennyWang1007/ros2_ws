@@ -1,0 +1,738 @@
+[0.000000] (-) TimerEvent: {}
+[0.000230] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000282] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.000337] (system_interfaces) JobQueued: {'identifier': 'system_interfaces', 'dependencies': OrderedDict()}
+[0.000362] (monitor_system) JobQueued: {'identifier': 'monitor_system', 'dependencies': OrderedDict([('system_interfaces', '/home/benny/ros2_ws/install/system_interfaces')])}
+[0.000386] (pros_library) JobQueued: {'identifier': 'pros_library', 'dependencies': OrderedDict([('system_interfaces', '/home/benny/ros2_ws/install/system_interfaces')])}
+[0.000434] (template) JobQueued: {'identifier': 'template', 'dependencies': OrderedDict([('system_interfaces', '/home/benny/ros2_ws/install/system_interfaces'), ('pros_library', '/home/benny/ros2_ws/install/pros_library')])}
+[0.002986] (test_node) JobQueued: {'identifier': 'test_node', 'dependencies': OrderedDict([('system_interfaces', '/home/benny/ros2_ws/install/system_interfaces'), ('pros_library', '/home/benny/ros2_ws/install/pros_library')])}
+[0.003061] (system_interfaces) JobStarted: {'identifier': 'system_interfaces'}
+[0.010036] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.014467] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[0.025749] (system_interfaces) JobProgress: {'identifier': 'system_interfaces', 'progress': 'cmake'}
+[0.026511] (system_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/benny/ros2_ws/src/system_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/benny/ros2_ws/install/system_interfaces'], 'cwd': '/home/benny/ros2_ws/build/system_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'benny'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/benny'), ('OLDPWD', '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1208'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/benny/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'benny'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'benny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/benny/ros2_ws/build/system_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.031429] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.032708] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.034067] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/benny/ros2_ws/build/my_cpp_pkg', '--', '-j8', '-l8'], 'cwd': '/home/benny/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'benny'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/benny'), ('OLDPWD', '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1208'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/benny/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'benny'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'benny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/benny/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.094055] (-) TimerEvent: {}
+[0.195018] (-) TimerEvent: {}
+[0.295478] (-) TimerEvent: {}
+[0.396248] (-) TimerEvent: {}
+[0.442632] (system_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.447968] (system_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.448544] (system_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.449042] (system_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.449574] (system_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.450140] (system_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.450623] (system_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.451107] (system_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.451566] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.452221] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.452745] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.453220] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.453730] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.454254] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.454748] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.497662] (-) TimerEvent: {}
+[0.498891] (system_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.507314] (system_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.515561] (system_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.516342] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.517600] (system_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.522459] (system_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.522743] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.598480] (-) TimerEvent: {}
+[0.671589] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.698618] (-) TimerEvent: {}
+[0.735162] (system_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.798978] (-) TimerEvent: {}
+[0.824534] (system_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.831126] (system_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.834593] (system_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.863655] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/my_py_pkg', 'build', '--build-base', '/home/benny/ros2_ws/build/my_py_pkg/build', 'install', '--record', '/home/benny/ros2_ws/build/my_py_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/benny/ros2_ws/src/my_py_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'benny', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/benny', 'OLDPWD': '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'lzh_TW', 'SYSTEMD_EXEC_PID': '1208', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/benny/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'benny', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'benny', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'lzh_TW', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'lzh_TW', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'lzh_TW', 'LC_IDENTIFICATION': 'lzh_TW', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/benny/ros2_ws/build/my_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/benny/ros2_ws/build/my_py_pkg/prefix_override:/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/benny/ros2_ws/install/my_cpp_pkg'}, 'shell': False}
+[0.877894] (system_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.904606] (-) TimerEvent: {}
+[0.978003] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.008650] (-) TimerEvent: {}
+[1.011128] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.013235] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/benny/ros2_ws/build/my_cpp_pkg\n'}
+[1.041967] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[1.085161] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[1.095240] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/benny/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/benny/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'benny'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/benny'), ('OLDPWD', '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1208'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/benny/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'benny'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'benny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/benny/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[1.104278] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.104449] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[1.104529] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[1.104646] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[1.104751] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[1.104852] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[1.104918] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[1.104980] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[1.105043] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[1.105104] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[1.105193] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[1.105257] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[1.105317] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[1.105378] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[1.105441] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[1.105503] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[1.110244] (-) TimerEvent: {}
+[1.113917] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[1.157908] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.159210] (my_py_pkg) StdoutLine: {'line': b'writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO\n'}
+[1.159448] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt\n'}
+[1.159524] (my_py_pkg) StdoutLine: {'line': b'writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt\n'}
+[1.159591] (my_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt\n'}
+[1.159656] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt\n'}
+[1.161136] (my_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.162748] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.163186] (my_py_pkg) StdoutLine: {'line': b'running build\n'}
+[1.163334] (my_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.164600] (my_py_pkg) StdoutLine: {'line': b'running install\n'}
+[1.164829] (my_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.165948] (my_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.166766] (my_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.169020] (my_py_pkg) StdoutLine: {'line': b"removing '/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.169524] (my_py_pkg) StdoutLine: {'line': b'Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info\n'}
+[1.170958] (my_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.192396] (my_py_pkg) StdoutLine: {'line': b'Installing py_node script to /home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[1.193273] (my_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/benny/ros2_ws/build/my_py_pkg/install.log'\n"}
+[1.199835] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[1.213335] (-) TimerEvent: {}
+[1.223430] (my_py_pkg) CommandEnded: {'returncode': 0}
+[1.258089] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[1.302151] (system_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.313566] (-) TimerEvent: {}
+[1.414205] (-) TimerEvent: {}
+[1.481751] (system_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.514696] (-) TimerEvent: {}
+[1.615102] (-) TimerEvent: {}
+[1.716339] (-) TimerEvent: {}
+[1.816955] (-) TimerEvent: {}
+[1.823115] (system_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.840933] (system_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.842923] (system_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.867273] (system_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.867617] (system_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.867708] (system_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.867773] (system_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.894121] (system_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.917825] (-) TimerEvent: {}
+[2.001594] (system_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.018164] (-) TimerEvent: {}
+[2.025995] (system_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.026814] (system_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.028081] (system_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.044409] (system_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.045300] (system_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/benny/ros2_ws/build/system_interfaces\n'}
+[2.058822] (system_interfaces) CommandEnded: {'returncode': 0}
+[2.059308] (system_interfaces) JobProgress: {'identifier': 'system_interfaces', 'progress': 'build'}
+[2.059340] (system_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/benny/ros2_ws/build/system_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/benny/ros2_ws/build/system_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'benny'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/benny'), ('OLDPWD', '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1208'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/benny/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'benny'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'benny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/benny/ros2_ws/build/system_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[2.103092] (system_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.121297] (-) TimerEvent: {}
+[2.124993] (system_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.134406] (system_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_system_interfaces\n'}
+[2.221402] (-) TimerEvent: {}
+[2.325777] (-) TimerEvent: {}
+[2.415030] (system_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.415660] (system_interfaces) StdoutLine: {'line': b'creating system_interfaces.egg-info\n'}
+[2.416018] (system_interfaces) StdoutLine: {'line': b'writing system_interfaces.egg-info/PKG-INFO\n'}
+[2.416151] (system_interfaces) StdoutLine: {'line': b'writing dependency_links to system_interfaces.egg-info/dependency_links.txt\n'}
+[2.416386] (system_interfaces) StdoutLine: {'line': b'writing top-level names to system_interfaces.egg-info/top_level.txt\n'}
+[2.416500] (system_interfaces) StdoutLine: {'line': b"writing manifest file 'system_interfaces.egg-info/SOURCES.txt'\n"}
+[2.418536] (system_interfaces) StdoutLine: {'line': b"reading manifest file 'system_interfaces.egg-info/SOURCES.txt'\n"}
+[2.419039] (system_interfaces) StdoutLine: {'line': b"writing manifest file 'system_interfaces.egg-info/SOURCES.txt'\n"}
+[2.426466] (-) TimerEvent: {}
+[2.446777] (system_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_system_interfaces_egg\n'}
+[2.473050] (system_interfaces) StdoutLine: {'line': b'[  5%] Built target system_interfaces__cpp\n'}
+[2.484085] (system_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.484419] (system_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.487486] (system_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.502049] (system_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/system_interfaces/msg/detail/node_change__functions.c.o\x1b[0m\n'}
+[2.503203] (system_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/system_interfaces/msg/detail/check_node__functions.c.o\x1b[0m\n'}
+[2.530424] (-) TimerEvent: {}
+[2.582011] (system_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libsystem_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.623146] (system_interfaces) StdoutLine: {'line': b'[ 20%] Built target system_interfaces__rosidl_generator_c\n'}
+[2.631775] (-) TimerEvent: {}
+[2.635285] (system_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.636078] (system_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.639389] (system_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.736151] (-) TimerEvent: {}
+[2.775805] (system_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_interfaces/msg/node_change__type_support.cpp.o\x1b[0m\n'}
+[2.781248] (system_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_interfaces/msg/check_node__type_support.cpp.o\x1b[0m\n'}
+[2.796955] (system_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_interfaces/msg/detail/node_change__type_support.cpp.o\x1b[0m\n'}
+[2.797849] (system_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_interfaces/msg/detail/dds_fastrtps/node_change__type_support.cpp.o\x1b[0m\n'}
+[2.812741] (system_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_interfaces/msg/detail/dds_fastrtps/check_node__type_support.cpp.o\x1b[0m\n'}
+[2.836378] (-) TimerEvent: {}
+[2.937231] (-) TimerEvent: {}
+[2.965539] (system_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_interfaces/msg/node_change__type_support.cpp.o\x1b[0m\n'}
+[2.995297] (system_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_interfaces/msg/detail/node_change__type_support.c.o\x1b[0m\n'}
+[3.023016] (system_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_interfaces/msg/check_node__type_support.cpp.o\x1b[0m\n'}
+[3.037512] (-) TimerEvent: {}
+[3.070357] (system_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_interfaces/msg/detail/node_change__type_support_c.cpp.o\x1b[0m\n'}
+[3.102440] (system_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_interfaces/msg/detail/check_node__type_support.c.o\x1b[0m\n'}
+[3.118168] (system_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.137679] (-) TimerEvent: {}
+[3.168875] (system_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_interfaces/msg/detail/check_node__type_support_c.cpp.o\x1b[0m\n'}
+[3.186931] (system_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.196875] (system_interfaces) StdoutLine: {'line': b'[ 61%] Built target system_interfaces__rosidl_typesupport_c\n'}
+[3.202311] (system_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libsystem_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.211238] (system_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_interfaces/msg/detail/check_node__type_support.cpp.o\x1b[0m\n'}
+[3.237909] (-) TimerEvent: {}
+[3.260429] (system_interfaces) StdoutLine: {'line': b'[ 66%] Built target system_interfaces__rosidl_typesupport_cpp\n'}
+[3.265293] (system_interfaces) StdoutLine: {'line': b'[ 66%] Built target system_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.338371] (-) TimerEvent: {}
+[3.429949] (system_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.439028] (-) TimerEvent: {}
+[3.532647] (system_interfaces) StdoutLine: {'line': b'[ 69%] Built target system_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.539234] (-) TimerEvent: {}
+[3.626700] (system_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.639717] (-) TimerEvent: {}
+[3.720854] (system_interfaces) StdoutLine: {'line': b'[ 71%] Built target system_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.721185] (system_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.740504] (-) TimerEvent: {}
+[3.873303] (-) TimerEvent: {}
+[3.874397] (system_interfaces) StdoutLine: {'line': b'[ 74%] Built target system_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.896206] (system_interfaces) StdoutLine: {'line': b'[ 74%] Built target system_interfaces\n'}
+[3.928970] (system_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.973961] (-) TimerEvent: {}
+[4.086504] (-) TimerEvent: {}
+[4.187753] (-) TimerEvent: {}
+[4.297349] (-) TimerEvent: {}
+[4.329379] (system_interfaces) StdoutLine: {'line': b'[ 76%] Built target system_interfaces__py\n'}
+[4.352873] (system_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/system_interfaces/msg/_node_change_s.c.o\x1b[0m\n'}
+[4.354513] (system_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/system_interfaces/msg/_check_node_s.c.o\x1b[0m\n'}
+[4.400764] (-) TimerEvent: {}
+[4.483342] (system_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/system_interfaces/libsystem_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[4.515118] (-) TimerEvent: {}
+[4.530906] (system_interfaces) StdoutLine: {'line': b'[ 84%] Built target system_interfaces__rosidl_generator_py\n'}
+[4.553533] (system_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.555569] (system_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.556794] (system_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/system_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.615301] (-) TimerEvent: {}
+[4.662754] (system_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/system_interfaces/system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.671075] (system_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/system_interfaces/system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.671340] (system_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/system_interfaces/system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.705348] (system_interfaces) StdoutLine: {'line': b'[100%] Built target system_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.709128] (system_interfaces) StdoutLine: {'line': b'[100%] Built target system_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.709372] (system_interfaces) StdoutLine: {'line': b'[100%] Built target system_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.715772] (-) TimerEvent: {}
+[4.728537] (system_interfaces) CommandEnded: {'returncode': 0}
+[4.797197] (system_interfaces) JobProgress: {'identifier': 'system_interfaces', 'progress': 'install'}
+[4.798094] (system_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/benny/ros2_ws/build/system_interfaces'], 'cwd': '/home/benny/ros2_ws/build/system_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'benny'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/benny'), ('OLDPWD', '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1208'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/benny/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'benny'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'benny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/benny/ros2_ws/build/system_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[4.807916] (system_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.807975] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/ament_index/resource_index/rosidl_interfaces/system_interfaces\n'}
+[4.808007] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces\n'}
+[4.808034] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg\n'}
+[4.808061] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail\n'}
+[4.808087] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__functions.c\n'}
+[4.808112] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__functions.h\n'}
+[4.808144] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__functions.h\n'}
+[4.808169] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__struct.h\n'}
+[4.808195] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__functions.c\n'}
+[4.808219] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__type_support.h\n'}
+[4.808242] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__type_support.h\n'}
+[4.808266] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__struct.h\n'}
+[4.808289] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/check_node.h\n'}
+[4.808313] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.808337] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/node_change.h\n'}
+[4.808375] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/library_path.sh\n'}
+[4.808413] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/library_path.dsv\n'}
+[4.808438] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_generator_c.so\n'}
+[4.808462] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_generator_c.so" to ""\n'}
+[4.808485] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces\n'}
+[4.808508] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg\n'}
+[4.808531] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.808557] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail\n'}
+[4.808582] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__rosidl_typesupport_fastrtps_c.h\n'}
+[4.808606] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__rosidl_typesupport_fastrtps_c.h\n'}
+[4.808635] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.808659] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.808684] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces\n'}
+[4.808708] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg\n'}
+[4.808732] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail\n'}
+[4.808755] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__type_support.c\n'}
+[4.808778] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__rosidl_typesupport_introspection_c.h\n'}
+[4.808801] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__type_support.c\n'}
+[4.808824] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__rosidl_typesupport_introspection_c.h\n'}
+[4.808847] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.808891] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.808919] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.808947] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_c.so\n'}
+[4.808972] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[4.808996] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces\n'}
+[4.809019] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg\n'}
+[4.809043] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail\n'}
+[4.809066] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__traits.hpp\n'}
+[4.809090] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__struct.hpp\n'}
+[4.809114] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__traits.hpp\n'}
+[4.809137] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__builder.hpp\n'}
+[4.809161] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__builder.hpp\n'}
+[4.809185] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__struct.hpp\n'}
+[4.809208] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/node_change.hpp\n'}
+[4.809233] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/check_node.hpp\n'}
+[4.809256] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces\n'}
+[4.809278] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg\n'}
+[4.809301] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail\n'}
+[4.809325] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.809481] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/dds_fastrtps\n'}
+[4.809519] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.809552] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.809578] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.809603] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.809627] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces\n'}
+[4.809652] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg\n'}
+[4.809677] (system_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail\n'}
+[4.823821] (-) TimerEvent: {}
+[4.829545] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.829745] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.829834] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/check_node__type_support.cpp\n'}
+[4.829977] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/include/system_interfaces/system_interfaces/msg/detail/node_change__type_support.cpp\n'}
+[4.830071] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.830146] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.830218] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.830288] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[4.830367] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/pythonpath.sh\n'}
+[4.830435] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/pythonpath.dsv\n'}
+[4.830553] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info\n'}
+[4.830623] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.830689] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.830756] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.830822] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.830886] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces\n'}
+[4.830950] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg\n'}
+[4.831051] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_node_change.py\n'}
+[4.831120] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_check_node.py\n'}
+[4.831185] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/__init__.py\n'}
+[4.831249] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_check_node_s.c\n'}
+[4.831312] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_node_change_s.c\n'}
+[4.831376] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.831440] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.831570] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.831642] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/_system_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[4.831712] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.831777] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/__init__.py\n'}
+[4.831852] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/libsystem_interfaces__rosidl_generator_py.so\n'}
+[4.831916] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.856012] (system_interfaces) StdoutLine: {'line': b"Listing '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces'...\n"}
+[4.856218] (system_interfaces) StdoutLine: {'line': b"Compiling '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/__init__.py'...\n"}
+[4.856327] (system_interfaces) StdoutLine: {'line': b"Listing '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg'...\n"}
+[4.856408] (system_interfaces) StdoutLine: {'line': b"Compiling '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/__init__.py'...\n"}
+[4.856479] (system_interfaces) StdoutLine: {'line': b"Compiling '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_check_node.py'...\n"}
+[4.856543] (system_interfaces) StdoutLine: {'line': b"Compiling '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/msg/_node_change.py'...\n"}
+[4.860195] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.862327] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.864657] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.864821] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.865400] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.865990] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages/system_interfaces/system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.866506] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_generator_py.so\n'}
+[4.870060] (system_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/system_interfaces/lib/libsystem_interfaces__rosidl_generator_py.so" to ""\n'}
+[4.870194] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/msg/NodeChange.idl\n'}
+[4.871140] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/msg/CheckNode.idl\n'}
+[4.871480] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/msg/NodeChange.msg\n'}
+[4.871795] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/msg/CheckNode.msg\n'}
+[4.871917] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/ament_index/resource_index/package_run_dependencies/system_interfaces\n'}
+[4.872830] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/ament_index/resource_index/parent_prefix_path/system_interfaces\n'}
+[4.872941] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/ament_prefix_path.sh\n'}
+[4.872979] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.873015] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/path.sh\n'}
+[4.873041] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/environment/path.dsv\n'}
+[4.873345] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/local_setup.bash\n'}
+[4.873700] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/local_setup.sh\n'}
+[4.873787] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/local_setup.zsh\n'}
+[4.873854] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/local_setup.dsv\n'}
+[4.873917] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/package.dsv\n'}
+[4.874151] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/ament_index/resource_index/packages/system_interfaces\n'}
+[4.874398] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_cExport.cmake\n'}
+[4.877371] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.877611] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.877956] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.878091] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.878703] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.889884] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[4.907261] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.907539] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_cppExport.cmake\n'}
+[4.907752] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.908275] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.908402] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.908469] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.908531] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[4.909407] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.909542] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_pyExport.cmake\n'}
+[4.909638] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/export_system_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.909704] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.909765] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.910070] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.910188] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.910307] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.910379] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.910447] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.910708] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfacesConfig.cmake\n'}
+[4.910822] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake/system_interfacesConfig-version.cmake\n'}
+[4.910919] (system_interfaces) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/package.xml\n'}
+[4.915057] (system_interfaces) CommandEnded: {'returncode': 0}
+[4.932097] (-) TimerEvent: {}
+[5.032577] (-) TimerEvent: {}
+[5.133062] (-) TimerEvent: {}
+[5.181574] (system_interfaces) JobEnded: {'identifier': 'system_interfaces', 'rc': 0}
+[5.182865] (pros_library) JobStarted: {'identifier': 'pros_library'}
+[5.198122] (monitor_system) JobStarted: {'identifier': 'monitor_system'}
+[5.233797] (-) TimerEvent: {}
+[5.407950] (-) TimerEvent: {}
+[5.522661] (-) TimerEvent: {}
+[5.620878] (monitor_system) JobProgress: {'identifier': 'monitor_system', 'progress': 'cmake'}
+[5.622540] (monitor_system) Command: {'cmd': ['/usr/bin/cmake', '/home/benny/ros2_ws/src/monitor_system', '-DCMAKE_INSTALL_PREFIX=/home/benny/ros2_ws/install/monitor_system'], 'cwd': '/home/benny/ros2_ws/build/monitor_system', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'benny'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/benny/ros2_ws/install/system_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/benny'), ('OLDPWD', '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1208'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/benny/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'benny'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'benny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/benny/ros2_ws/build/monitor_system'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[5.623160] (-) TimerEvent: {}
+[5.712466] (monitor_system) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.723355] (-) TimerEvent: {}
+[5.783280] (monitor_system) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.796132] (monitor_system) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.825088] (-) TimerEvent: {}
+[5.915361] (monitor_system) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.922802] (monitor_system) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.924277] (monitor_system) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.924368] (monitor_system) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.925459] (-) TimerEvent: {}
+[5.933778] (monitor_system) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.026515] (-) TimerEvent: {}
+[6.031963] (monitor_system) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.038948] (monitor_system) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.039721] (monitor_system) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.040543] (monitor_system) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.048500] (monitor_system) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.058959] (pros_library) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/pros_library', 'build', '--build-base', '/home/benny/ros2_ws/build/pros_library/build', 'install', '--record', '/home/benny/ros2_ws/build/pros_library/install.log', '--single-version-externally-managed'], 'cwd': '/home/benny/ros2_ws/src/pros_library', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'benny', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/benny/ros2_ws/install/system_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/benny', 'OLDPWD': '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'lzh_TW', 'SYSTEMD_EXEC_PID': '1208', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/benny/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'benny', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'benny', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'lzh_TW', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'lzh_TW', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'lzh_TW', 'LC_IDENTIFICATION': 'lzh_TW', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/benny/ros2_ws/build/pros_library', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/benny/ros2_ws/build/pros_library/prefix_override:/home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages:/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg'}, 'shell': False}
+[6.127469] (-) TimerEvent: {}
+[6.230364] (-) TimerEvent: {}
+[6.269644] (monitor_system) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[6.321802] (pros_library) StdoutLine: {'line': b'running egg_info\n'}
+[6.323173] (pros_library) StdoutLine: {'line': b'creating ../../build/pros_library/pros_library.egg-info\n'}
+[6.323311] (pros_library) StdoutLine: {'line': b'writing ../../build/pros_library/pros_library.egg-info/PKG-INFO\n'}
+[6.323389] (pros_library) StdoutLine: {'line': b'writing dependency_links to ../../build/pros_library/pros_library.egg-info/dependency_links.txt\n'}
+[6.323460] (pros_library) StdoutLine: {'line': b'writing entry points to ../../build/pros_library/pros_library.egg-info/entry_points.txt\n'}
+[6.323558] (pros_library) StdoutLine: {'line': b'writing requirements to ../../build/pros_library/pros_library.egg-info/requires.txt\n'}
+[6.323624] (pros_library) StdoutLine: {'line': b'writing top-level names to ../../build/pros_library/pros_library.egg-info/top_level.txt\n'}
+[6.323690] (pros_library) StdoutLine: {'line': b"writing manifest file '../../build/pros_library/pros_library.egg-info/SOURCES.txt'\n"}
+[6.325475] (pros_library) StdoutLine: {'line': b"reading manifest file '../../build/pros_library/pros_library.egg-info/SOURCES.txt'\n"}
+[6.325820] (pros_library) StdoutLine: {'line': b"writing manifest file '../../build/pros_library/pros_library.egg-info/SOURCES.txt'\n"}
+[6.326257] (pros_library) StdoutLine: {'line': b'running build\n'}
+[6.326380] (pros_library) StdoutLine: {'line': b'running build_py\n'}
+[6.326474] (pros_library) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/pros_library/build\n'}
+[6.326541] (pros_library) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/pros_library/build/lib\n'}
+[6.326604] (pros_library) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/pros_library/build/lib/pros_library\n'}
+[6.326667] (pros_library) StdoutLine: {'line': b'copying pros_library/__init__.py -> /home/benny/ros2_ws/build/pros_library/build/lib/pros_library\n'}
+[6.326730] (pros_library) StdoutLine: {'line': b'copying pros_library/pros_node.py -> /home/benny/ros2_ws/build/pros_library/build/lib/pros_library\n'}
+[6.326987] (pros_library) StdoutLine: {'line': b'running install\n'}
+[6.327104] (pros_library) StdoutLine: {'line': b'running install_lib\n'}
+[6.328295] (pros_library) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages/pros_library\n'}
+[6.328403] (pros_library) StdoutLine: {'line': b'copying /home/benny/ros2_ws/build/pros_library/build/lib/pros_library/__init__.py -> /home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages/pros_library\n'}
+[6.328475] (pros_library) StdoutLine: {'line': b'copying /home/benny/ros2_ws/build/pros_library/build/lib/pros_library/pros_node.py -> /home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages/pros_library\n'}
+[6.328721] (pros_library) StdoutLine: {'line': b'byte-compiling /home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages/pros_library/__init__.py to __init__.cpython-310.pyc\n'}
+[6.328839] (pros_library) StdoutLine: {'line': b'byte-compiling /home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages/pros_library/pros_node.py to pros_node.cpython-310.pyc\n'}
+[6.330255] (pros_library) StdoutLine: {'line': b'running install_data\n'}
+[6.330393] (-) TimerEvent: {}
+[6.330512] (pros_library) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/pros_library/share/ament_index\n'}
+[6.330957] (pros_library) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/pros_library/share/ament_index/resource_index\n'}
+[6.331131] (pros_library) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/pros_library/share/ament_index/resource_index/packages\n'}
+[6.331203] (pros_library) StdoutLine: {'line': b'copying resource/pros_library -> /home/benny/ros2_ws/install/pros_library/share/ament_index/resource_index/packages\n'}
+[6.331293] (pros_library) StdoutLine: {'line': b'copying package.xml -> /home/benny/ros2_ws/install/pros_library/share/pros_library\n'}
+[6.331356] (pros_library) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.332395] (pros_library) StdoutLine: {'line': b'Copying ../../build/pros_library/pros_library.egg-info to /home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages/pros_library-0.0.0-py3.10.egg-info\n'}
+[6.334608] (pros_library) StdoutLine: {'line': b'running install_scripts\n'}
+[6.355123] (pros_library) StdoutLine: {'line': b"writing list of installed files to '/home/benny/ros2_ws/build/pros_library/install.log'\n"}
+[6.380829] (monitor_system) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.393658] (pros_library) CommandEnded: {'returncode': 0}
+[6.410560] (pros_library) JobEnded: {'identifier': 'pros_library', 'rc': 0}
+[6.410895] (template) JobStarted: {'identifier': 'template'}
+[6.412926] (test_node) JobStarted: {'identifier': 'test_node'}
+[6.425928] (monitor_system) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.431359] (-) TimerEvent: {}
+[6.432503] (monitor_system) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.445771] (monitor_system) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.457474] (monitor_system) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.482103] (monitor_system) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.531827] (-) TimerEvent: {}
+[6.555558] (monitor_system) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.556204] (monitor_system) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.632475] (-) TimerEvent: {}
+[6.679707] (monitor_system) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.705251] (monitor_system) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.733498] (-) TimerEvent: {}
+[6.755378] (monitor_system) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.765980] (monitor_system) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.833599] (-) TimerEvent: {}
+[6.893400] (monitor_system) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.893593] (monitor_system) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.934029] (-) TimerEvent: {}
+[7.029563] (monitor_system) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.033927] (monitor_system) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.034133] (-) TimerEvent: {}
+[7.138421] (-) TimerEvent: {}
+[7.212227] (monitor_system) StdoutLine: {'line': b'-- Found system_interfaces: 0.0.0 (/home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake)\n'}
+[7.231030] (monitor_system) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.240055] (-) TimerEvent: {}
+[7.322623] (monitor_system) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.322934] (monitor_system) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[7.323048] (monitor_system) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.324324] (monitor_system) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.324621] (monitor_system) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.324780] (monitor_system) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.325237] (monitor_system) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.328521] (monitor_system) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.340792] (monitor_system) StdoutLine: {'line': b'-- Generating done\n'}
+[7.340966] (-) TimerEvent: {}
+[7.342603] (monitor_system) StdoutLine: {'line': b'-- Build files have been written to: /home/benny/ros2_ws/build/monitor_system\n'}
+[7.355263] (monitor_system) CommandEnded: {'returncode': 0}
+[7.357696] (monitor_system) JobProgress: {'identifier': 'monitor_system', 'progress': 'build'}
+[7.358319] (monitor_system) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/benny/ros2_ws/build/monitor_system', '--', '-j8', '-l8'], 'cwd': '/home/benny/ros2_ws/build/monitor_system', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'benny'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/benny/ros2_ws/install/system_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/benny'), ('OLDPWD', '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1208'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/benny/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'benny'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'benny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/benny/ros2_ws/build/monitor_system'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[7.420127] (monitor_system) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/watchdog.dir/src/watchdog.cpp.o\x1b[0m\n'}
+[7.441494] (-) TimerEvent: {}
+[7.445536] (monitor_system) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/syslog.dir/src/log.cpp.o\x1b[0m\n'}
+[7.462766] (template) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/template', 'build', '--build-base', '/home/benny/ros2_ws/build/template/build', 'install', '--record', '/home/benny/ros2_ws/build/template/install.log', '--single-version-externally-managed'], 'cwd': '/home/benny/ros2_ws/src/template', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'benny', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/benny/ros2_ws/install/system_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/benny', 'OLDPWD': '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'lzh_TW', 'SYSTEMD_EXEC_PID': '1208', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/benny/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'benny', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'benny', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'lzh_TW', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'lzh_TW', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'lzh_TW', 'LC_IDENTIFICATION': 'lzh_TW', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/benny/ros2_ws/build/template', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/benny/ros2_ws/build/template/prefix_override:/home/benny/ros2_ws/install/template/lib/python3.10/site-packages:/home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages:/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg'}, 'shell': False}
+[7.467077] (test_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/test_node', 'build', '--build-base', '/home/benny/ros2_ws/build/test_node/build', 'install', '--record', '/home/benny/ros2_ws/build/test_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/benny/ros2_ws/src/test_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'benny', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/benny/ros2_ws/install/system_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/benny', 'OLDPWD': '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'lzh_TW', 'SYSTEMD_EXEC_PID': '1208', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/benny/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'benny', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'benny', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'lzh_TW', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'lzh_TW', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'lzh_TW', 'LC_IDENTIFICATION': 'lzh_TW', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/benny/ros2_ws/build/test_node', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/benny/ros2_ws/build/test_node/prefix_override:/home/benny/ros2_ws/install/test_node/lib/python3.10/site-packages:/home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages:/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg'}, 'shell': False}
+[7.541736] (-) TimerEvent: {}
+[7.643352] (-) TimerEvent: {}
+[7.744249] (-) TimerEvent: {}
+[7.770044] (template) StdoutLine: {'line': b'running egg_info\n'}
+[7.770343] (template) StdoutLine: {'line': b'creating ../../build/template/template.egg-info\n'}
+[7.770450] (template) StdoutLine: {'line': b'writing ../../build/template/template.egg-info/PKG-INFO\n'}
+[7.770572] (template) StdoutLine: {'line': b'writing dependency_links to ../../build/template/template.egg-info/dependency_links.txt\n'}
+[7.770658] (template) StdoutLine: {'line': b'writing entry points to ../../build/template/template.egg-info/entry_points.txt\n'}
+[7.770736] (template) StdoutLine: {'line': b'writing requirements to ../../build/template/template.egg-info/requires.txt\n'}
+[7.770811] (template) StdoutLine: {'line': b'writing top-level names to ../../build/template/template.egg-info/top_level.txt\n'}
+[7.770884] (template) StdoutLine: {'line': b"writing manifest file '../../build/template/template.egg-info/SOURCES.txt'\n"}
+[7.770953] (template) StdoutLine: {'line': b"reading manifest file '../../build/template/template.egg-info/SOURCES.txt'\n"}
+[7.771047] (test_node) StdoutLine: {'line': b'running egg_info\n'}
+[7.771167] (test_node) StdoutLine: {'line': b'creating ../../build/test_node/test_node.egg-info\n'}
+[7.771248] (test_node) StdoutLine: {'line': b'writing ../../build/test_node/test_node.egg-info/PKG-INFO\n'}
+[7.771323] (test_node) StdoutLine: {'line': b'writing dependency_links to ../../build/test_node/test_node.egg-info/dependency_links.txt\n'}
+[7.771397] (test_node) StdoutLine: {'line': b'writing entry points to ../../build/test_node/test_node.egg-info/entry_points.txt\n'}
+[7.771468] (test_node) StdoutLine: {'line': b'writing requirements to ../../build/test_node/test_node.egg-info/requires.txt\n'}
+[7.771537] (test_node) StdoutLine: {'line': b'writing top-level names to ../../build/test_node/test_node.egg-info/top_level.txt\n'}
+[7.771666] (test_node) StdoutLine: {'line': b"writing manifest file '../../build/test_node/test_node.egg-info/SOURCES.txt'\n"}
+[7.771749] (test_node) StdoutLine: {'line': b"reading manifest file '../../build/test_node/test_node.egg-info/SOURCES.txt'\n"}
+[7.773615] (template) StdoutLine: {'line': b"writing manifest file '../../build/template/template.egg-info/SOURCES.txt'\n"}
+[7.773770] (template) StdoutLine: {'line': b'running build\n'}
+[7.773856] (template) StdoutLine: {'line': b'running build_py\n'}
+[7.773939] (template) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/template/build\n'}
+[7.774071] (template) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/template/build/lib\n'}
+[7.774155] (template) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/template/build/lib/template\n'}
+[7.774228] (template) StdoutLine: {'line': b'copying template/__init__.py -> /home/benny/ros2_ws/build/template/build/lib/template\n'}
+[7.774298] (template) StdoutLine: {'line': b'copying template/template.py -> /home/benny/ros2_ws/build/template/build/lib/template\n'}
+[7.774367] (template) StdoutLine: {'line': b'running install\n'}
+[7.774436] (template) StdoutLine: {'line': b'running install_lib\n'}
+[7.774520] (template) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/template/lib/python3.10/site-packages/template\n'}
+[7.774605] (template) StdoutLine: {'line': b'copying /home/benny/ros2_ws/build/template/build/lib/template/__init__.py -> /home/benny/ros2_ws/install/template/lib/python3.10/site-packages/template\n'}
+[7.774674] (template) StdoutLine: {'line': b'copying /home/benny/ros2_ws/build/template/build/lib/template/template.py -> /home/benny/ros2_ws/install/template/lib/python3.10/site-packages/template\n'}
+[7.774740] (template) StdoutLine: {'line': b'byte-compiling /home/benny/ros2_ws/install/template/lib/python3.10/site-packages/template/__init__.py to __init__.cpython-310.pyc\n'}
+[7.774806] (template) StdoutLine: {'line': b'byte-compiling /home/benny/ros2_ws/install/template/lib/python3.10/site-packages/template/template.py to template.cpython-310.pyc\n'}
+[7.774873] (template) StdoutLine: {'line': b'running install_data\n'}
+[7.774938] (template) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/template/share/ament_index\n'}
+[7.775004] (template) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/template/share/ament_index/resource_index\n'}
+[7.775102] (template) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/template/share/ament_index/resource_index/packages\n'}
+[7.775174] (template) StdoutLine: {'line': b'copying resource/template -> /home/benny/ros2_ws/install/template/share/ament_index/resource_index/packages\n'}
+[7.775240] (template) StdoutLine: {'line': b'copying package.xml -> /home/benny/ros2_ws/install/template/share/template\n'}
+[7.775512] (template) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.775609] (template) StdoutLine: {'line': b'Copying ../../build/template/template.egg-info to /home/benny/ros2_ws/install/template/lib/python3.10/site-packages/template-0.0.0-py3.10.egg-info\n'}
+[7.775686] (template) StdoutLine: {'line': b'running install_scripts\n'}
+[7.775901] (test_node) StdoutLine: {'line': b"writing manifest file '../../build/test_node/test_node.egg-info/SOURCES.txt'\n"}
+[7.776013] (test_node) StdoutLine: {'line': b'running build\n'}
+[7.776121] (test_node) StdoutLine: {'line': b'running build_py\n'}
+[7.776190] (test_node) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/test_node/build\n'}
+[7.776293] (test_node) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/test_node/build/lib\n'}
+[7.776386] (test_node) StdoutLine: {'line': b'creating /home/benny/ros2_ws/build/test_node/build/lib/test_node\n'}
+[7.776454] (test_node) StdoutLine: {'line': b'copying test_node/__init__.py -> /home/benny/ros2_ws/build/test_node/build/lib/test_node\n'}
+[7.776520] (test_node) StdoutLine: {'line': b'copying test_node/test_node.py -> /home/benny/ros2_ws/build/test_node/build/lib/test_node\n'}
+[7.776613] (test_node) StdoutLine: {'line': b'running install\n'}
+[7.776721] (test_node) StdoutLine: {'line': b'running install_lib\n'}
+[7.777501] (test_node) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/test_node/lib/python3.10/site-packages/test_node\n'}
+[7.777651] (test_node) StdoutLine: {'line': b'copying /home/benny/ros2_ws/build/test_node/build/lib/test_node/__init__.py -> /home/benny/ros2_ws/install/test_node/lib/python3.10/site-packages/test_node\n'}
+[7.777779] (test_node) StdoutLine: {'line': b'copying /home/benny/ros2_ws/build/test_node/build/lib/test_node/test_node.py -> /home/benny/ros2_ws/install/test_node/lib/python3.10/site-packages/test_node\n'}
+[7.777848] (test_node) StdoutLine: {'line': b'byte-compiling /home/benny/ros2_ws/install/test_node/lib/python3.10/site-packages/test_node/__init__.py to __init__.cpython-310.pyc\n'}
+[7.778319] (test_node) StdoutLine: {'line': b'byte-compiling /home/benny/ros2_ws/install/test_node/lib/python3.10/site-packages/test_node/test_node.py to test_node.cpython-310.pyc\n'}
+[7.778727] (test_node) StdoutLine: {'line': b'running install_data\n'}
+[7.779857] (test_node) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/test_node/share/ament_index\n'}
+[7.780046] (test_node) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/test_node/share/ament_index/resource_index\n'}
+[7.780131] (test_node) StdoutLine: {'line': b'creating /home/benny/ros2_ws/install/test_node/share/ament_index/resource_index/packages\n'}
+[7.780204] (test_node) StdoutLine: {'line': b'copying resource/test_node -> /home/benny/ros2_ws/install/test_node/share/ament_index/resource_index/packages\n'}
+[7.780277] (test_node) StdoutLine: {'line': b'copying package.xml -> /home/benny/ros2_ws/install/test_node/share/test_node\n'}
+[7.780376] (test_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.785455] (test_node) StdoutLine: {'line': b'Copying ../../build/test_node/test_node.egg-info to /home/benny/ros2_ws/install/test_node/lib/python3.10/site-packages/test_node-0.0.0-py3.10.egg-info\n'}
+[7.787435] (test_node) StdoutLine: {'line': b'running install_scripts\n'}
+[7.795855] (template) StdoutLine: {'line': b"writing list of installed files to '/home/benny/ros2_ws/build/template/install.log'\n"}
+[7.807534] (test_node) StdoutLine: {'line': b'Installing test_talker script to /home/benny/ros2_ws/install/test_node/lib/test_node\n'}
+[7.807983] (test_node) StdoutLine: {'line': b"writing list of installed files to '/home/benny/ros2_ws/build/test_node/install.log'\n"}
+[7.827869] (template) CommandEnded: {'returncode': 0}
+[7.841106] (template) JobEnded: {'identifier': 'template', 'rc': 0}
+[7.852869] (-) TimerEvent: {}
+[7.852998] (test_node) CommandEnded: {'returncode': 0}
+[7.853344] (test_node) JobEnded: {'identifier': 'test_node', 'rc': 0}
+[7.954214] (-) TimerEvent: {}
+[8.061826] (-) TimerEvent: {}
+[8.162508] (-) TimerEvent: {}
+[8.266609] (-) TimerEvent: {}
+[8.377540] (-) TimerEvent: {}
+[8.489966] (-) TimerEvent: {}
+[8.591295] (-) TimerEvent: {}
+[8.694748] (-) TimerEvent: {}
+[8.795873] (-) TimerEvent: {}
+[8.896678] (-) TimerEvent: {}
+[8.997733] (-) TimerEvent: {}
+[9.098237] (-) TimerEvent: {}
+[9.198722] (-) TimerEvent: {}
+[9.299189] (-) TimerEvent: {}
+[9.400583] (-) TimerEvent: {}
+[9.501019] (-) TimerEvent: {}
+[9.601841] (-) TimerEvent: {}
+[9.702339] (-) TimerEvent: {}
+[9.803648] (-) TimerEvent: {}
+[9.904896] (-) TimerEvent: {}
+[10.032212] (-) TimerEvent: {}
+[10.133197] (-) TimerEvent: {}
+[10.233638] (-) TimerEvent: {}
+[10.334699] (-) TimerEvent: {}
+[10.435700] (-) TimerEvent: {}
+[10.536435] (-) TimerEvent: {}
+[10.637759] (-) TimerEvent: {}
+[10.739577] (-) TimerEvent: {}
+[10.841003] (-) TimerEvent: {}
+[10.941939] (-) TimerEvent: {}
+[11.042676] (-) TimerEvent: {}
+[11.145485] (-) TimerEvent: {}
+[11.248484] (-) TimerEvent: {}
+[11.350126] (-) TimerEvent: {}
+[11.451592] (-) TimerEvent: {}
+[11.552055] (-) TimerEvent: {}
+[11.652839] (-) TimerEvent: {}
+[11.753962] (-) TimerEvent: {}
+[11.857734] (-) TimerEvent: {}
+[11.958676] (-) TimerEvent: {}
+[12.061530] (-) TimerEvent: {}
+[12.163719] (-) TimerEvent: {}
+[12.265923] (-) TimerEvent: {}
+[12.373670] (-) TimerEvent: {}
+[12.474989] (-) TimerEvent: {}
+[12.579121] (-) TimerEvent: {}
+[12.680252] (-) TimerEvent: {}
+[12.780641] (-) TimerEvent: {}
+[12.881356] (-) TimerEvent: {}
+[12.984557] (-) TimerEvent: {}
+[13.093520] (-) TimerEvent: {}
+[13.194549] (-) TimerEvent: {}
+[13.294969] (-) TimerEvent: {}
+[13.395801] (-) TimerEvent: {}
+[13.497039] (-) TimerEvent: {}
+[13.598481] (-) TimerEvent: {}
+[13.698861] (-) TimerEvent: {}
+[13.805837] (-) TimerEvent: {}
+[13.906433] (-) TimerEvent: {}
+[14.007142] (-) TimerEvent: {}
+[14.112377] (-) TimerEvent: {}
+[14.213158] (-) TimerEvent: {}
+[14.313516] (-) TimerEvent: {}
+[14.414644] (-) TimerEvent: {}
+[14.520624] (-) TimerEvent: {}
+[14.621354] (-) TimerEvent: {}
+[14.722778] (-) TimerEvent: {}
+[14.825940] (-) TimerEvent: {}
+[14.926707] (-) TimerEvent: {}
+[15.028048] (-) TimerEvent: {}
+[15.128949] (-) TimerEvent: {}
+[15.229427] (-) TimerEvent: {}
+[15.330358] (-) TimerEvent: {}
+[15.430855] (-) TimerEvent: {}
+[15.531836] (-) TimerEvent: {}
+[15.632188] (-) TimerEvent: {}
+[15.732523] (-) TimerEvent: {}
+[15.833665] (-) TimerEvent: {}
+[15.934597] (-) TimerEvent: {}
+[16.035377] (-) TimerEvent: {}
+[16.135772] (-) TimerEvent: {}
+[16.237262] (-) TimerEvent: {}
+[16.340476] (-) TimerEvent: {}
+[16.441526] (-) TimerEvent: {}
+[16.543039] (-) TimerEvent: {}
+[16.643432] (-) TimerEvent: {}
+[16.743936] (-) TimerEvent: {}
+[16.847164] (-) TimerEvent: {}
+[16.951240] (-) TimerEvent: {}
+[17.051807] (-) TimerEvent: {}
+[17.152897] (-) TimerEvent: {}
+[17.253571] (-) TimerEvent: {}
+[17.358960] (-) TimerEvent: {}
+[17.459432] (-) TimerEvent: {}
+[17.544671] (monitor_system) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable syslog\x1b[0m\n'}
+[17.561951] (-) TimerEvent: {}
+[17.662924] (-) TimerEvent: {}
+[17.763425] (-) TimerEvent: {}
+[17.865827] (-) TimerEvent: {}
+[17.969367] (-) TimerEvent: {}
+[18.070142] (-) TimerEvent: {}
+[18.078078] (monitor_system) StdoutLine: {'line': b'[ 75%] Built target syslog\n'}
+[18.172518] (-) TimerEvent: {}
+[18.274331] (-) TimerEvent: {}
+[18.381040] (-) TimerEvent: {}
+[18.488667] (-) TimerEvent: {}
+[18.589247] (-) TimerEvent: {}
+[18.693433] (-) TimerEvent: {}
+[18.796512] (-) TimerEvent: {}
+[18.897872] (-) TimerEvent: {}
+[19.002089] (-) TimerEvent: {}
+[19.105632] (-) TimerEvent: {}
+[19.212730] (-) TimerEvent: {}
+[19.314462] (-) TimerEvent: {}
+[19.415441] (-) TimerEvent: {}
+[19.516737] (-) TimerEvent: {}
+[19.617676] (-) TimerEvent: {}
+[19.719296] (-) TimerEvent: {}
+[19.820545] (-) TimerEvent: {}
+[19.921805] (-) TimerEvent: {}
+[20.027420] (-) TimerEvent: {}
+[20.130740] (-) TimerEvent: {}
+[20.234574] (-) TimerEvent: {}
+[20.335968] (-) TimerEvent: {}
+[20.437174] (-) TimerEvent: {}
+[20.538058] (-) TimerEvent: {}
+[20.642319] (-) TimerEvent: {}
+[20.742743] (-) TimerEvent: {}
+[20.843928] (-) TimerEvent: {}
+[20.944556] (-) TimerEvent: {}
+[21.071008] (-) TimerEvent: {}
+[21.171927] (-) TimerEvent: {}
+[21.283939] (-) TimerEvent: {}
+[21.385371] (-) TimerEvent: {}
+[21.530298] (-) TimerEvent: {}
+[21.632014] (-) TimerEvent: {}
+[21.652368] (monitor_system) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable watchdog\x1b[0m\n'}
+[21.732462] (-) TimerEvent: {}
+[21.835377] (-) TimerEvent: {}
+[21.936280] (-) TimerEvent: {}
+[22.040055] (-) TimerEvent: {}
+[22.147504] (-) TimerEvent: {}
+[22.221437] (monitor_system) StdoutLine: {'line': b'[100%] Built target watchdog\n'}
+[22.240932] (monitor_system) CommandEnded: {'returncode': 0}
+[22.247973] (-) TimerEvent: {}
+[22.263981] (monitor_system) JobProgress: {'identifier': 'monitor_system', 'progress': 'install'}
+[22.265107] (monitor_system) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/benny/ros2_ws/build/monitor_system'], 'cwd': '/home/benny/ros2_ws/build/monitor_system', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'benny'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/benny/ros2_ws/install/system_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/benny'), ('OLDPWD', '/home/benny/ros2_ws/install/my_py_pkg/lib/my_py_pkg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1208'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/benny/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'benny'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'benny'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/benny-virtual-machine:@/tmp/.ICE-unix/1188,unix/benny-virtual-machine:/tmp/.ICE-unix/1188'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5c8a2aef_2340_4eb6_aa36_5b949e781be8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQ3CC2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_py_pkg:/home/benny/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/benny/ros2_ws/build/monitor_system'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:/home/benny/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[22.270468] (monitor_system) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.270782] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/lib/monitor_system/syslog\n'}
+[22.273052] (monitor_system) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/monitor_system/lib/monitor_system/syslog" to ""\n'}
+[22.273204] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/lib/monitor_system/watchdog\n'}
+[22.276188] (monitor_system) StdoutLine: {'line': b'-- Set runtime path of "/home/benny/ros2_ws/install/monitor_system/lib/monitor_system/watchdog" to ""\n'}
+[22.276375] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/package_run_dependencies/monitor_system\n'}
+[22.276661] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/parent_prefix_path/monitor_system\n'}
+[22.277033] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/ament_prefix_path.sh\n'}
+[22.285660] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/ament_prefix_path.dsv\n'}
+[22.285968] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/path.sh\n'}
+[22.286042] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/path.dsv\n'}
+[22.286131] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.bash\n'}
+[22.286194] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.sh\n'}
+[22.286257] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.zsh\n'}
+[22.286337] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.dsv\n'}
+[22.286399] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/package.dsv\n'}
+[22.286460] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/packages/monitor_system\n'}
+[22.286522] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/cmake/monitor_systemConfig.cmake\n'}
+[22.286599] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/cmake/monitor_systemConfig-version.cmake\n'}
+[22.286901] (monitor_system) StdoutLine: {'line': b'-- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/package.xml\n'}
+[22.289987] (monitor_system) CommandEnded: {'returncode': 0}
+[22.342860] (monitor_system) JobEnded: {'identifier': 'monitor_system', 'rc': 0}
+[22.344638] (-) EventReactorShutdown: {}

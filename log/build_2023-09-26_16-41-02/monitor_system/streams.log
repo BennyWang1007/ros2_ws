@@ -1,0 +1,24 @@
+[0.440s] Invoking command in '/home/benny/ros2_ws/build/monitor_system': CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/monitor_system:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/test_node:/home/benny/ros2_ws/install/template:/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/benny/ros2_ws/build/monitor_system -- -j8 -l8
+[0.489s] [100%] Built target syslog
+[0.489s] [100%] Built target watchdog
+[0.505s] Invoked command in '/home/benny/ros2_ws/build/monitor_system' returned '0': CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/monitor_system:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/test_node:/home/benny/ros2_ws/install/template:/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/benny/ros2_ws/build/monitor_system -- -j8 -l8
+[0.540s] Invoking command in '/home/benny/ros2_ws/build/monitor_system': CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/monitor_system:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/test_node:/home/benny/ros2_ws/install/template:/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/benny/ros2_ws/build/monitor_system
+[0.548s] -- Install configuration: ""
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/lib/monitor_system/syslog
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/lib/monitor_system/watchdog
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/package_run_dependencies/monitor_system
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/parent_prefix_path/monitor_system
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/ament_prefix_path.sh
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/ament_prefix_path.dsv
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/path.sh
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/path.dsv
+[0.549s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.bash
+[0.550s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.sh
+[0.550s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.zsh
+[0.550s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.dsv
+[0.550s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/package.dsv
+[0.550s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/packages/monitor_system
+[0.550s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/cmake/monitor_systemConfig.cmake
+[0.550s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/cmake/monitor_systemConfig-version.cmake
+[0.550s] -- Up-to-date: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/package.xml
+[0.555s] Invoked command in '/home/benny/ros2_ws/build/monitor_system' returned '0': CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/monitor_system:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/test_node:/home/benny/ros2_ws/install/template:/home/benny/ros2_ws/install/pros_library:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/benny/ros2_ws/build/monitor_system

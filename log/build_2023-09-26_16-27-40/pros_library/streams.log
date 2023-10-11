@@ -1,0 +1,20 @@
+[0.721s] Invoking command in '/home/benny/ros2_ws/src/pros_library': CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/monitor_system:/home/benny/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/benny/ros2_ws/build/pros_library/prefix_override:/home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pros_library build --build-base /home/benny/ros2_ws/build/pros_library/build install --record /home/benny/ros2_ws/build/pros_library/install.log --single-version-externally-managed
+[1.030s] running egg_info
+[1.030s] writing ../../build/pros_library/pros_library.egg-info/PKG-INFO
+[1.031s] writing dependency_links to ../../build/pros_library/pros_library.egg-info/dependency_links.txt
+[1.031s] writing entry points to ../../build/pros_library/pros_library.egg-info/entry_points.txt
+[1.031s] writing requirements to ../../build/pros_library/pros_library.egg-info/requires.txt
+[1.031s] writing top-level names to ../../build/pros_library/pros_library.egg-info/top_level.txt
+[1.033s] reading manifest file '../../build/pros_library/pros_library.egg-info/SOURCES.txt'
+[1.034s] writing manifest file '../../build/pros_library/pros_library.egg-info/SOURCES.txt'
+[1.034s] running build
+[1.034s] running build_py
+[1.034s] running install
+[1.035s] running install_lib
+[1.038s] running install_data
+[1.038s] running install_egg_info
+[1.038s] removing '/home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages/pros_library-0.0.0-py3.10.egg-info' (and everything under it)
+[1.038s] Copying ../../build/pros_library/pros_library.egg-info to /home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages/pros_library-0.0.0-py3.10.egg-info
+[1.039s] running install_scripts
+[1.065s] writing list of installed files to '/home/benny/ros2_ws/build/pros_library/install.log'
+[1.100s] Invoked command in '/home/benny/ros2_ws/src/pros_library' returned '0': CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/monitor_system:/home/benny/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/benny/ros2_ws/build/pros_library/prefix_override:/home/benny/ros2_ws/install/pros_library/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pros_library build --build-base /home/benny/ros2_ws/build/pros_library/build install --record /home/benny/ros2_ws/build/pros_library/install.log --single-version-externally-managed

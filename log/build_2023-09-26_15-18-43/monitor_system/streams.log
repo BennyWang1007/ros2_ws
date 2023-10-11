@@ -1,0 +1,74 @@
+[0.425s] Invoking command in '/home/benny/ros2_ws/build/monitor_system': AMENT_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/benny/ros2_ws/install/system_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/benny/ros2_ws/src/monitor_system -DCMAKE_INSTALL_PREFIX=/home/benny/ros2_ws/install/monitor_system
+[0.514s] -- The C compiler identification is GNU 11.4.0
+[0.585s] -- The CXX compiler identification is GNU 11.4.0
+[0.610s] -- Detecting C compiler ABI info
+[0.717s] -- Detecting C compiler ABI info - done
+[0.725s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.726s] -- Detecting C compile features
+[0.726s] -- Detecting C compile features - done
+[0.736s] -- Detecting CXX compiler ABI info
+[0.834s] -- Detecting CXX compiler ABI info - done
+[0.841s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.842s] -- Detecting CXX compile features
+[0.842s] -- Detecting CXX compile features - done
+[0.850s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.078s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.183s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[1.228s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.234s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.248s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.259s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.284s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.357s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.358s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.482s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.507s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.557s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.568s] -- Looking for pthread.h
+[1.695s] -- Looking for pthread.h - found
+[1.695s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.831s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.836s] -- Found Threads: TRUE  
+[2.014s] -- Found system_interfaces: 0.0.0 (/home/benny/ros2_ws/install/system_interfaces/share/system_interfaces/cmake)
+[2.033s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.125s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.125s] -- Configured cppcheck include dirs: 
+[2.125s] -- Configured cppcheck exclude dirs and/or files: 
+[2.126s] -- Added test 'lint_cmake' to check CMake code style
+[2.126s] -- Added test 'uncrustify' to check C / C++ code style
+[2.127s] -- Configured uncrustify additional arguments: 
+[2.128s] -- Added test 'xmllint' to check XML markup files
+[2.130s] -- Configuring done
+[2.143s] -- Generating done
+[2.144s] -- Build files have been written to: /home/benny/ros2_ws/build/monitor_system
+[2.157s] Invoked command in '/home/benny/ros2_ws/build/monitor_system' returned '0': AMENT_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/benny/ros2_ws/install/system_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/benny/ros2_ws/src/monitor_system -DCMAKE_INSTALL_PREFIX=/home/benny/ros2_ws/install/monitor_system
+[2.160s] Invoking command in '/home/benny/ros2_ws/build/monitor_system': AMENT_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/benny/ros2_ws/install/system_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/benny/ros2_ws/build/monitor_system -- -j8 -l8
+[2.222s] [ 25%] [32mBuilding CXX object CMakeFiles/watchdog.dir/src/watchdog.cpp.o[0m
+[2.248s] [ 50%] [32mBuilding CXX object CMakeFiles/syslog.dir/src/log.cpp.o[0m
+[12.348s] [ 75%] [32m[1mLinking CXX executable syslog[0m
+[12.880s] [ 75%] Built target syslog
+[16.454s] [100%] [32m[1mLinking CXX executable watchdog[0m
+[17.023s] [100%] Built target watchdog
+[17.044s] Invoked command in '/home/benny/ros2_ws/build/monitor_system' returned '0': AMENT_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/benny/ros2_ws/install/system_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/benny/ros2_ws/build/monitor_system -- -j8 -l8
+[17.067s] Invoking command in '/home/benny/ros2_ws/build/monitor_system': AMENT_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/benny/ros2_ws/install/system_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/benny/ros2_ws/build/monitor_system
+[17.072s] -- Install configuration: ""
+[17.073s] -- Installing: /home/benny/ros2_ws/install/monitor_system/lib/monitor_system/syslog
+[17.075s] -- Set runtime path of "/home/benny/ros2_ws/install/monitor_system/lib/monitor_system/syslog" to ""
+[17.075s] -- Installing: /home/benny/ros2_ws/install/monitor_system/lib/monitor_system/watchdog
+[17.078s] -- Set runtime path of "/home/benny/ros2_ws/install/monitor_system/lib/monitor_system/watchdog" to ""
+[17.078s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/package_run_dependencies/monitor_system
+[17.078s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/parent_prefix_path/monitor_system
+[17.079s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/ament_prefix_path.sh
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/ament_prefix_path.dsv
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/path.sh
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/environment/path.dsv
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.bash
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.sh
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.zsh
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/local_setup.dsv
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/package.dsv
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/ament_index/resource_index/packages/monitor_system
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/cmake/monitor_systemConfig.cmake
+[17.088s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/cmake/monitor_systemConfig-version.cmake
+[17.089s] -- Installing: /home/benny/ros2_ws/install/monitor_system/share/monitor_system/package.xml
+[17.092s] Invoked command in '/home/benny/ros2_ws/build/monitor_system' returned '0': AMENT_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/benny/ros2_ws/install/system_interfaces:/home/benny/ros2_ws/install/my_cpp_pkg:/home/benny/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/benny/ros2_ws/install/system_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/benny/ros2_ws/install/system_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/benny/ros2_ws/build/monitor_system

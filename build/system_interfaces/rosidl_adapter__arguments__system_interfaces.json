@@ -1,0 +1,7 @@
+{
+  "package_name": "system_interfaces",
+  "non_idl_tuples": [
+    "/home/benny/ros2_ws/src/system_interfaces:msg/NodeChange.msg",
+    "/home/benny/ros2_ws/src/system_interfaces:msg/CheckNode.msg"
+  ]
+}
